@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="hidden">
+        <div class="score"></div>
+        <div class="questionCount"></div>
+    </header>
+    <main>
+        <div class="quizStart">
+            <h1>Chelsea FC Quiz</h1>
+            <button type="button" class="startButton">START!</button>
+        </div>
+        <div class="questAnsForm"></div>
+
+        <div class="answerChoice-feedback"></div>
+        <section id="checkingSection">
+            <p><span id="resultMesg"></span></p>
+            <button id="js-next-button">Next Question</button>
+        </section>
+    </main>
+</body>
+<script src="datastorage.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+
+</html>

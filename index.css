@@ -1,0 +1,69 @@
+body {
+
+    background-size: cover;
+    width: 100vw;
+
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.questAnsForm {
+    width: 50%;
+    display: none;
+    margin: 0 auto;
+
+}
+
+
+main {
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.quizStart {
+    width: 100%;
+    padding: 40px;
+    margin-top: 0
+}
+
+.questionNumber {
+    display: none;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+
+.incorrect {
+    background-color: lightcoral;
+}
+
+
+#js-next-button {
+    padding: 15px;
+    font-size: 20px;
+}
+
+
+#checkingSection {
+    display: none;
+    height: 300px;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    background: linear-gradient(#550d4a9a, #0b2d58c4);
+}
+
+#resultMesg {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
