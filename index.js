@@ -48,12 +48,14 @@ function generateQuestion() {
 
 function incrementScore() {
     score++;
+    $(".score").html(`Score: ${score}/${STORE.length}`)
 }
 
 function incrementQuestionNumber() {
     questionNumber++;
 
     $('.questionNumber').text(questionNumber + 1);
+    $(".questionCount").html(`Question: ${questionNumber + 1}/${STORE.length}`);
 
 }
 
