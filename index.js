@@ -40,7 +40,7 @@ function generateQuestion() {
     </div>`;
     } else {
         renderResults();
-        restartQuiz();
+        handleRestartQuiz();
         $(".questionNumber").text(10);
     }
 }
@@ -50,10 +50,9 @@ function incrementScore() {
     score++;
     $(".score").html(`Score: ${score}/${STORE.length}`)
 }
-
+/*will correlate the question number with the current question you're on*/
 function incrementQuestionNumber() {
     questionNumber++;
-
     $('.questionNumber').text(questionNumber + 1);
     $(".questionCount").html(`Question: ${questionNumber + 1}/${STORE.length}`);
 
@@ -62,6 +61,7 @@ function incrementQuestionNumber() {
 /*note will set the HTML to generateQuestion which we created above*/
 function renderQuestion() {
     $('.questAnsForm').html(generateQuestion());
+    handleSubmittedChoice();
 }
 
 /* Remember Store.length should be about 10*/
@@ -134,10 +134,28 @@ function correctMessage() {
 
 function incorrectMessage() {
     $('#checkingSection').show();
-    $('#quizAnsForm').hide();
+    $('.questAnsForm').hide();
     $('#resultMesg').html('Wrong the correct answer is ' + `${STORE[questionNumber].answer}`);
 }
 
+
+function renderResults() {
+    $('#totalScoreSection').show();
+    $('.hidden').hide();
+    $('#checkingSection').hide();
+    $('.questAnsForm').hide();
+    $('#userScore').text('Final Score: ' + score);
+
+}
+
+
+function handleRestartQuiz() {
+    $('main').on('click', '#js-restart-button', function (event) {
+        location.reload();
+    })
+
+
+}
 
 
 
@@ -149,7 +167,8 @@ function quizApp() {
     renderQuestion();
     currentQuestion();
     currentScore();
-    handleSubmittedChoice();
     handleNextButton();
+    handleRestartQuiz();
+
 }
 $(quizApp);
