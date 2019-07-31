@@ -88,6 +88,7 @@ function handleStartQuiz() {
         $(".questionNumber").text(1);
         $(".hidden").css("display", "inline-block");
         $("#checkingSection").css("display", "none")
+
     });
 }
 
