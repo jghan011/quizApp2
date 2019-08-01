@@ -7,9 +7,10 @@ function generateQuestion() {
     if (questionNumber < STORE.length) {
         /* question number is also declared as a class*/
         return `<div class="question-${questionNumber}">
-    <h2>${STORE[questionNumber].question}</h2>
+   
     <form>
     <fieldset>
+    <h2 >${STORE[questionNumber].question}</h2>
     <label class="answerOption">
     <input type="radio" value="${
       STORE[questionNumber].choices[0]
