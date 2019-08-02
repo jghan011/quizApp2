@@ -1,4 +1,15 @@
+html {
+
+    height: 1000px;
+}
+
+:root {
+
+    background-size: cover
+}
+
 * {
+    background-size: cover;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -32,24 +43,39 @@
 }
 
 form {
-    max-width: 500px;
-
+    max-width: 550px;
     margin: auto;
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
 }
 
 h2 {
-    color: rgba(143, 143, 143, 0.315);
+    color: rgba(255, 255, 255, 0.904);
+    background-color: black;
 }
 
+
+
+
 .submitButton {
-    background-color: white;
+    background-color: #fff;
+    border: none;
+    padding: 3px 20px;
+    border-radius: 1px;
+    font-size: 1.5em;
     color: black;
-    border: 2px solid #e7e7e7;
+    cursor: pointer;
+    transition: all .5s ease;
 }
 
 .submitButton:hover {
-    background-color: #e7e7e7;
+    background-color: rgba(0, 0, 0, 0.822);
+    color: aliceblue;
 }
+
+
+
 
 main {
 
@@ -69,6 +95,7 @@ main {
     position: relative;
     margin-block-end: 250px;
     margin-left: 1000px;
+    margin-bottom: 150px;
 }
 
 .score {
@@ -97,7 +124,13 @@ main {
 .answerOption {
     display: block;
     color: aliceblue;
+    font-size: 35px;
+    list-style: none;
+}
 
+.answerOption:hover {
+    background-color: rgba(0, 0, 0, 0.822);
+    color: aliceblue;
 }
 
 .choice-container {}
@@ -132,24 +165,36 @@ main {
     align-content: center;
 }
 
+
 .chelsea-fc {
     justify-content: center;
     align-content: center;
-
 }
+
+
+.startButton {
+    background-color: #fff;
+    border: none;
+    padding: 3px 20px;
+    border-radius: 1px;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+
 
 .startButton:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-
+    color: white;
+    background-color: black
 }
+
 
 .questionNumber {
     display: none;
 }
-
-
-
-
 
 
 
@@ -205,3 +250,56 @@ main {
     padding: 15px;
     font-size: 20px;
 }
+
+
+@media screen and (max-width:320px) {
+    .js-body {
+        background-image: url("stanford-bridge-chelsea-renovacion.jpg")-x;
+        max-width: 100%;
+        max-height: 100%;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 30px;
+
+    }
+
+    #checkingSection {
+        width: 300px;
+        font-size: 10px;
+        display: none;
+        height: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        background: linear-gradient(#550d4a9a, #0b2d58c4);
+    }
+
+    form {
+
+        width: 280px;
+        font-size: 15px;
+    }
+
+    .hidden {
+
+        margin-left: 100px
+    }
+
+    .totalScoreSection {
+
+        display: none;
+        height: 300px;
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        background: linear-gradient(#b345a044, #9198e575);
+    }
+
+}
+
+/* This is where you would specify the width and hight of your images */
