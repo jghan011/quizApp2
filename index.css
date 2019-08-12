@@ -67,6 +67,7 @@ h2 {
     color: black;
     cursor: pointer;
     transition: all .5s ease;
+
 }
 
 .submitButton:hover {
@@ -250,56 +251,3 @@ main {
     padding: 15px;
     font-size: 20px;
 }
-
-
-@media screen and (max-width:320px) {
-    .js-body {
-        background-image: url("stanford-bridge-chelsea-renovacion.jpg")-x;
-        max-width: 100%;
-        max-height: 100%;
-        background-repeat: no-repeat;
-        margin: auto;
-        margin-top: 30px;
-
-    }
-
-    #checkingSection {
-        width: 300px;
-        font-size: 10px;
-        display: none;
-        height: 300px;
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
-        color: white;
-        font-size: 24px;
-        background: linear-gradient(#550d4a9a, #0b2d58c4);
-    }
-
-    form {
-
-        width: 280px;
-        font-size: 15px;
-    }
-
-    .hidden {
-
-        margin-left: 100px
-    }
-
-    .totalScoreSection {
-
-        display: none;
-        height: 300px;
-        width: 300px;
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
-        color: white;
-        font-size: 24px;
-        background: linear-gradient(#b345a044, #9198e575);
-    }
-
-}
-
-/* This is where you would specify the width and hight of your images */
